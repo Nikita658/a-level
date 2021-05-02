@@ -2,7 +2,7 @@ package Nikita;
 
 public class Homerwork {
     public static void main(String[] args) {
-        findTheSquareOfATriangle();
+        findTheSquareOfATriangle(1,2,3,4,5,1);
         checkIfNumberEven(121);
         findTheSmallestModule(1.2, -2.3, 2.5);
     }
@@ -29,11 +29,12 @@ public class Homerwork {
         }
     }
 
-    private static void findTheSquareOfATriangle() {
-        int a = 4;
-        int b = 6;
-        int c = 5;
-        int result = a * b * c;
-        System.out.println("вывод " + result);
+    private static void findTheSquareOfATriangle(int x1, int y1, int x2, int y2, int x3, int y3) {
+
+        int square = Math.abs((x1 - x3) * (y2 - y1) - (x1 - x2) * (y3 - y1)) / 2;
+        System.out.println("Square of triangle: " + square);
+
+        System.out.println();
     }
 }
+
