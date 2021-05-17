@@ -20,7 +20,46 @@ public class Task1 {
         System.out.println(phone1.getNumber());
         System.out.println(phone2.getNumber());
         System.out.println(phone3.getNumber());
+
+
     }
 }
 
+
+class Phone {
+    int number;
+    String model;
+    double weight;
+
+    Phone() {
+    }
+
+    Phone(int number, String model, double weight) {
+        this.number = number;
+        this.model = model;
+        this.weight = weight;
+    }
+
+    Phone(int number, double weight) {
+        this.number = number;
+        this.weight = weight;
+    }
+
+    public String fillingTheTelephone() {
+        return "Phone{" +
+                "number=" + number +
+                ", model='" + model +
+                ", weight=" + weight +
+                '}';
+    }
+
+    void receiveCall(String name) {
+        System.out.println("call" + name);
+    }
+
+    int getNumber() {
+        return this.number;
+    }
+
+}
 
