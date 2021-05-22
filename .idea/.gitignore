@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.idea/
+out/
+untitled1.iml/
+*.iml
+*.ivs
+*.hml
+*.class
